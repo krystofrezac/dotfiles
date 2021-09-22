@@ -1,8 +1,6 @@
 #!/bin/bash
 
-DIRECTORY=`pwd`
+mkdir -p ~/config/nvim
+ln -sf ~/dotfiles/configs/nvim/* ~/.config/nvim
 
-mkdir -p ~/.config/nvim
-ln -sf $DIRECTORY/configs/nvim/* ~/.config/nvim
-
-echo "Installation complete"
+echo Installation complete

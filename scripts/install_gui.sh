@@ -1,6 +1,11 @@
 #!/bin/bash
 
-pacman -S xorg alacritty i3-wm i3status arandr
-cp ../configs/xorg-xinit/.xinitrc ~/.xinitrc
+sudo pacman -S xorg alacritty i3-wm i3status arandr
 
-echo "Installation complete"
+ln -sf ~/dotfiles/configs/xorg-xinit/.xinitrc ~/.xinitrc
+
+rm -rf ~/.config/alacritty
+mkdir ~/.config/alacritty
+ln -sf ~/dotfiles/configs/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+echo Installation complete
