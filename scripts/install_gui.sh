@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg alacritty i3-wm i3status arandr
+sudo pacman -S xorg alacritty i3-wm i3status dmenu arandr
 
 ln -sf ~/dotfiles/configs/xorg-xinit/.xinitrc ~/.xinitrc
 
