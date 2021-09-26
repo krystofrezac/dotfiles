@@ -1,8 +1,3 @@
-let g:nvim_tree_hijack_cursor = 0
-let g:nvim_tree_auto_close = 1
-let g:nvim_tree_tab_open = 1
-let g:nvim_tree_lsp_diagnostics = 1
-let g:nvim_tree_width=40
 let g:nvim_tree_icons = {
     \ 'default': '',
     \ 'symlink': '',
@@ -36,3 +31,14 @@ let g:nvim_tree_icons = {
 nnoremap <Leader>tf :NvimTreeFindFile<CR>
 nnoremap <Leader>tt :NvimTreeToggle<CR>
 nnoremap <Leader>tr :NvimTreeRefresh<CR>
+
+
+lua << EOF
+require'nvim-tree'.setup{
+  hijack_cursor = false,
+  auto_close = true,
+  tab_open = true,
+  lsp_diagnostics = true,
+  tree_width = 40,
+}
+EOF

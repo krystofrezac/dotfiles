@@ -9,6 +9,9 @@ autoload -Uz compinit; compinit
 _comp_options+=(globdots)
 source "$ZDOTDIR/external/completion.zsh"
 
+# asdf
+. /opt/asdf-vm/asdf.sh
+
 # Pure setup
 autoload -U promptinit; promptinit
 prompt pure
