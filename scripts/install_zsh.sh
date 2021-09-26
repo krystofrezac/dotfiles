@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo pacman -S zsh-completions zsh-syntax-highlighting starship
 rm -rf "$HOME/.config/zsh"
 mkdir -p "$HOME/.config/zsh"
 

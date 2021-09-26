@@ -3,6 +3,8 @@ alias ll="ls -lah"
 alias d="dirs -v"
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
+alias ".."="cd .."
+
 # Git
 alias gpu="git push"
 alias gcm="git commit -m"

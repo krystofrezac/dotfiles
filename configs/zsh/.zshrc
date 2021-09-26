@@ -12,10 +12,9 @@ source "$ZDOTDIR/external/completion.zsh"
 # asdf
 . /opt/asdf-vm/asdf.sh
 
-# Pure setup
-autoload -U promptinit; promptinit
-prompt pure
-
+# prompt 
+eval "$(starship init zsh)"
+export LC_CTYPE=en_US.UTF-8
 # Push the current directory visited on to the stack
 setopt AUTO_PUSHD
 
@@ -24,3 +23,22 @@ setopt PUSHD_IGNORE_DUPS
 
 # Do not print the directory stack after using pushd or popd
 setopt PUSHD_SILENT
+
+# vim mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# use vim keys fore selecting
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# use 'e' in normal mode to edit command in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd e edit-command-line
+
+# highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
