@@ -223,6 +223,20 @@ exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task-dialog"] floating enable
 
+# Monitors
+set $mode_display Select monitor layout - Home (1)
+
+mode "$mode_display" {
+  bindsym 1 exec --no-startup-id "sh $HOME/.config/X11/home.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+x mode "$mode_display"
+
+workspace_layout tabbed
+
 ##########
 # DESIGN #
 ##########
@@ -236,15 +250,3 @@ client.focused_inactive #333333 #282c34 #xabb2bf #484e50
 client.unfocused 	#5C6370 #222222 #5C6370 #292d2e #222222
 client.urgent 		#E06C75 #E06C75 #ABB2BF #E06C75 #E06C75
 client.placeholder 	#000000 #0c0c0c #ABB2BF #000000 #0c0c0c
-
-# Monitors
-set $mode_display Select monitor layout - Home (1)
-
-mode "$mode_display" {
-  bindsym 1 exec --no-startup-id "sh $HOME/.config/X11/home.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
-
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-bindsym $mod+x mode "$mode_display"
