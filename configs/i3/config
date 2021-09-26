@@ -217,7 +217,7 @@ bindsym $mod+BackSpace mode "$mode_system"
 
 
 # Wallpaper
-exec "sh $HOME/.config/i3/feh/set-wallpaper.sh"
+exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
 
 # Floating windows
 for_window [window_role="pop-up"] floating enable
@@ -232,7 +232,7 @@ hide_edge_borders both
 
 # class border backgr. text indicator child_border 
 client.focused 		#333333 #3E4452 #ABB2BF #285577
-client.focused_inactive #333333 #282c34 #xabb2bf#484e50
+client.focused_inactive #333333 #282c34 #xabb2bf #484e50
 client.unfocused 	#5C6370 #222222 #5C6370 #292d2e #222222
 client.urgent 		#E06C75 #E06C75 #ABB2BF #E06C75 #E06C75
 client.placeholder 	#000000 #0c0c0c #ABB2BF #000000 #0c0c0c
