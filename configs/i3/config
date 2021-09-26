@@ -217,7 +217,7 @@ bindsym $mod+BackSpace mode "$mode_system"
 
 
 # Wallpaper
-exec feh --no-fehbg --bg-fill ~/.config/i3/feh/blue-gradient.jpg
+exec "sh $HOME/.config/i3/feh/set-wallpaper.sh"
 
 # Floating windows
 for_window [window_role="pop-up"] floating enable
@@ -238,11 +238,10 @@ client.urgent 		#E06C75 #E06C75 #ABB2BF #E06C75 #E06C75
 client.placeholder 	#000000 #0c0c0c #ABB2BF #000000 #0c0c0c
 
 # Monitors
-
 set $mode_display Select monitor layout - Home (1)
 
 mode "$mode_display" {
-  bindsym 1 exec --no-startup-id sh "$HOME/.config/X11/home.sh", mode "default"
+  bindsym 1 exec --no-startup-id "sh $HOME/.config/X11/home.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
