@@ -217,7 +217,7 @@ bindsym $mod+BackSpace mode "$mode_system"
 
 
 # Wallpaper
-exec "sh $HOME/.config/i3/feh/set-wallpaper.sh"
+exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
 
 # Floating windows
 for_window [window_role="pop-up"] floating enable
