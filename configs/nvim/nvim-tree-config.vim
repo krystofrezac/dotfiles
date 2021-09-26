@@ -35,3 +35,4 @@ let g:nvim_tree_icons = {
 
 nnoremap <Leader>tf :NvimTreeFindFile<CR>
 nnoremap <Leader>tt :NvimTreeToggle<CR>
+nnoremap <Leader>tr :NvimTreeRefresh<CR>
