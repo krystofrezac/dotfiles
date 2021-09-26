@@ -1,0 +1,7 @@
+alias ll="ls -lah"
+
+# Git
+alias gpu="git push"
+alias gcm="git commit -m"
+alias ga="git add"
+alias gst="git status"
