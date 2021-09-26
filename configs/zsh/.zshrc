@@ -42,3 +42,9 @@ bindkey -M vicmd e edit-command-line
 
 # highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# run i3 on startup
+#if ["$(tty)" = "/dev/tty1"];
+#then
+#  pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"  
+#fi
