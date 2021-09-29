@@ -224,10 +224,11 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task-dialog"] floating enable
 
 # Monitors
-set $mode_display Select monitor layout - Home (1)
+set $mode_display Select monitor layout - Notebook(1), Home(2)
 
 mode "$mode_display" {
-  bindsym 1 exec --no-startup-id "sh $HOME/.config/X11/home.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
+  bindsym 1 exec --no-startup-id "sh $HOME/.config/X11/notebook.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
+  bindsym 2 exec --no-startup-id "sh $HOME/.config/X11/home.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh", mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"

@@ -9,6 +9,12 @@ autoload -Uz compinit; compinit
 _comp_options+=(globdots)
 source "$ZDOTDIR/external/completion.zsh"
 
+# Map delete
+bindkey  "^[[3~"  delete-char
+
+# vi-mode
+ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # asdf
 . /opt/asdf-vm/asdf.sh
 
@@ -23,10 +29,6 @@ setopt PUSHD_IGNORE_DUPS
 
 # Do not print the directory stack after using pushd or popd
 setopt PUSHD_SILENT
-
-# vim mode
-bindkey -v
-export KEYTIMEOUT=1
 
 # use vim keys fore selecting
 zmodload zsh/complist
@@ -44,7 +46,7 @@ bindkey -M vicmd e edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # run i3 on startup
-#if ["$(tty)" = "/dev/tty1"];
+#if [ "$(tty)" = "/dev/tty1" ];
 #then
 #  pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"  
 #fi
