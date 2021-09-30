@@ -1,16 +1,16 @@
 #!/bin/bash
 
-sudo pacman -S xorg alacritty i3-wm i3status dmenu i3lock imagemagick scrot arandr feh
+sudo pacman -S xorg kitty i3-wm i3status dmenu i3lock imagemagick scrot arandr feh ttf-fira-code
 
-ln -sf "$HOME/dotfiles/configs/xorg-xinit/.xinitrc" "$HOME/.xinitrc"
+ln -sf "$DOTFILES/configs/xorg-xinit/.xinitrc" "$HOME/.xinitrc"
 
 rm -rf "$HOME/.config/alacritty"
-ln -s "$HOME/dotfiles/configs/alacritty" "$HOME/.config"
+ln -s "$DOTFILES/configs/alacritty" "$HOME/.config"
 
 rm -rf "$HOME/.config/i3"
-ln -s "$HOME/dotfiles/configs/i3" "$HOME/.config"
+ln -s "$DOTFILES/configs/i3" "$HOME/.config"
 
 rm -rf "$HOME/.config/X11"
-ln -s "$HOME/dotfiles/configs/X11" "$HOME/.config"
+ln -s "$DOTFILES/configs/X11" "$HOME/.config"
 
 echo Installation complete
