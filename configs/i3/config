@@ -17,7 +17,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-font pango:Fira Code Medium 10
+font pango:FiraCode Nerd Font Medium 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -215,13 +215,12 @@ mode "$mode_system" {
 
 bindsym $mod+BackSpace mode "$mode_system"
 
-
-# Wallpaper
-exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
-
 # Floating windows
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task-dialog"] floating enable
+
+# Wallpaper
+exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
 
 # Monitors
 set $mode_display Select monitor layout - Notebook(1), Home(2)
@@ -237,6 +236,9 @@ mode "$mode_display" {
 bindsym $mod+x mode "$mode_display"
 
 workspace_layout tabbed
+
+# dunst - notifications
+exec --no-startup-id dunst
 
 ##########
 # DESIGN #

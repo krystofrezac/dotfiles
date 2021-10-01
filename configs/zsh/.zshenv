@@ -12,6 +12,9 @@ export VISUAL="nvim"
 
 export DOTFILES="$HOME/dotfiles"
 
+# For chrome notifications
+export $(dbus-launch)
+
 #######
 # ZSH #
 #######
