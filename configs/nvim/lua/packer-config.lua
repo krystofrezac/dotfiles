@@ -63,6 +63,8 @@ require('packer').startup(function()
     end
   }
 
+  use 'norcalli/nvim-colorizer.lua' 
+
   -- JS
   use 'yuezk/vim-js'
   use 'leafgarland/typescript-vim'

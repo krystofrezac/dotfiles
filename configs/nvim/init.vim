@@ -1,11 +1,14 @@
 let mapleader="\<Space>"
 
+set termguicolors
+
 lua require("packer-config")
 lua require("lsp-config")
 lua require("lualine-config")
 lua require("todo-comments-config")
 lua require("nvim-compe-config")
 lua require("barbar-config")
+lua require("nvim-colorizer-config")
 
 runtime telescope-config.vim
 runtime nvim-tree-config.vim
@@ -52,7 +55,6 @@ nnoremap OO O<Esc>
 
 " Theme
 colorscheme onedark
-set termguicolors
 
 " TAB
 set tabstop=2
