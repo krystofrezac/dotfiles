@@ -235,7 +235,19 @@ mode "$mode_display" {
 
 bindsym $mod+x mode "$mode_display"
 
-workspace_layout tabbed
+
+# Keyboard layout
+set $mode_keyboard Select keyboard layout - us(1), cz(2)
+
+mode "$mode_keyboard" {
+  bindsym 1 exec --no-startup-id "setxkbmap us", mode "default"
+  bindsym 2 exec --no-startup-id "setxkbmap -variant qwerty cz", mode "default" 
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+c mode "$mode_keyboard"
 
 # dunst - notifications
 exec --no-startup-id dunst
@@ -243,6 +255,9 @@ exec --no-startup-id dunst
 ##########
 # DESIGN #
 ##########
+
+# default open in tab
+workspace_layout tabbed
 
 # hide borders
 hide_edge_borders both
