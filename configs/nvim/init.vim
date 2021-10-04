@@ -18,6 +18,9 @@ runtime lspsaga-config.vim
 " Mac compe height
 set pumheight=15
 
+# Disable auto commenting on new line
+set formatoptions-=cro
+
 " File name
 set title
 set titlestring=%F
