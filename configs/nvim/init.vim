@@ -65,7 +65,8 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
-augroup your_group
+augroup syntax
   autocmd!
   autocmd FileType php syntax enable 
+  autocmd FileType html syntax enable 
 augroup END
