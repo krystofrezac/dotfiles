@@ -2,6 +2,7 @@
 
 sudo pacman -S zsh-completions zsh-syntax-highlighting starship
 yay -S zsh-vi-mode
+chsh -s $(which zsh)
 rm -rf "$HOME/.config/zsh"
 mkdir -p "$HOME/.config/zsh"
 
