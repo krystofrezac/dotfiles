@@ -5,8 +5,8 @@ yay -S nerd-fonts-fira-code
 
 ln -sf "$DOTFILES/configs/xorg-xinit/.xinitrc" "$HOME/.xinitrc"
 
-rm -rf "$HOME/.config/alacritty"
-ln -s "$DOTFILES/configs/alacritty" "$HOME/.config"
+rm -rf "$HOME/.config/kitty"
+ln -s "$DOTFILES/configs/kitty" "$HOME/.config"
 
 rm -rf "$HOME/.config/i3"
 ln -s "$DOTFILES/configs/i3" "$HOME/.config"

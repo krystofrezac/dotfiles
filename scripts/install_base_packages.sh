@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo pacman -S git diff-so-fancy xclip htop tldr udiskie
-day -S google-chrome asdf-vm
-
+sudo pacman -S --needed git base-devel yay
+yay -S google-chrome asdf-vm
 # asdf
 cp -f /opt/asdf-vm ~/.asdf
 
