@@ -223,7 +223,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task-dialog"] floating enable
 
 # Wallpaper
-exec --no-startup-id "sh $HOME/.config/i3/feh/set-wallpaper.sh"
+exec --no-startup-id  "SETUP='notebook' sh $HOME/.config/X11/main.sh && sh $HOME/.config/i3/feh/set-wallpaper.sh"
 
 # Monitors
 set $mode_display Select monitor layout - Notebook(1), Home(2)
