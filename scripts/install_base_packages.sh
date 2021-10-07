@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git diff-so-fancy xclip htop tldr udiskie
+sudo pacman -S git diff-so-fancy xclip htop tldr udiskie xss-lock
 sudo pacman -S --needed git base-devel yay
 yay -S google-chrome asdf-vm
 # asdf
