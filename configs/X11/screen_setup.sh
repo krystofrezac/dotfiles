@@ -1,0 +1,2 @@
+export NOTEBOOK_SCREEN="eDP-1"
+export HOME_SCREEN="DP-1"
