@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git diff-so-fancy xclip htop tldr udiskie
+sudo pacman -S git diff-so-fancy xclip htop tldr udiskie firefox
 yay -S google-chrome asdf-vm
 # asdf
 cp -f /opt/asdf-vm ~/.asdf
