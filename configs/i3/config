@@ -255,6 +255,23 @@ bindsym $mod+c mode "$mode_keyboard"
 # dunst - notifications
 exec --no-startup-id dunst
 
+set $mode_brightnes Enter number 1-0
+
+mode "$mode_brightnes" {
+  bindsym 1 exec --no-startup-id "brightnessctl s 10%", mode "default"
+  bindsym 2 exec --no-startup-id "brightnessctl s 20%", mode "default"
+  bindsym 3 exec --no-startup-id "brightnessctl s 30%", mode "default"
+  bindsym 4 exec --no-startup-id "brightnessctl s 40%", mode "default"
+  bindsym 5 exec --no-startup-id "brightnessctl s 50%", mode "default"
+  bindsym 6 exec --no-startup-id "brightnessctl s 60%", mode "default"
+  bindsym 7 exec --no-startup-id "brightnessctl s 70%", mode "default"
+  bindsym 8 exec --no-startup-id "brightnessctl s 80%", mode "default"
+  bindsym 9 exec --no-startup-id "brightnessctl s 90%", mode "default"
+  bindsym 0 exec --no-startup-id "brightnessctl s 100%", mode "default"
+}
+
+bindsym $mod+b mode "$mode_brightnes"
+
 ##########
 # DESIGN #
 ##########
