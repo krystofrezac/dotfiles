@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git diff-so-fancy xclip htop tldr udiskie firefox brightnessctl playerctl libinput xf86-input-libinput xfce4-settings
+sudo pacman -S git diff-so-fancy xclip htop tldr udiskie firefox brightnessctl playerctl libinput xf86-input-libinput xfce4-settings inotify-tools
 yay -S google-chrome asdf-vm
 # asdf
 cp -f /opt/asdf-vm ~/.asdf
