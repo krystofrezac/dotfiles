@@ -70,6 +70,9 @@ require('packer').startup(function()
   use 'leafgarland/typescript-vim'
   use 'peitalin/vim-jsx-typescript'
 
+  -- Elixir
+  use 'elixir-editors/vim-elixir' 
+
   -- GraphQL
   use 'jparise/vim-graphql'
 end)

@@ -62,13 +62,6 @@ local on_attach = function(client, bufnr)
   end
 end
 
-nvim_lsp.tsserver.setup{
-  on_attach = function(client)
-    client.resolved_capabilities.document_formatting = false
-    on_attach(client)
-  end
-}
-
 local filetypes = {
   javascript = "eslint",
   typescript = "eslint",
@@ -117,6 +110,13 @@ nvim_lsp.diagnosticls.setup {
   }
 }
 
+nvim_lsp.tsserver.setup{
+  on_attach = function(client)
+    client.resolved_capabilities.document_formatting = false
+    on_attach(client)
+  end
+}
+
 nvim_lsp.yamlls.setup{
   on_attach = on_attach
 }
@@ -128,3 +128,15 @@ nvim_lsp.intelephense.setup{
 nvim_lsp.ccls.setup{
   on_attach = on_attach
 }
+
+local path_to_elixirls = vim.fn.expand("$HOME/.cache/nvim/lspconfig/elixirls/release/language_server.sh")
+nvim_lsp.elixirls.setup({
+  cmd = {path_to_elixirls},
+  on_attach = on_attach,
+  settings = {
+    elixirLS = {
+      fetchDeps = false
+    }
+  }
+})
+

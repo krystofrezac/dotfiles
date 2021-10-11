@@ -69,4 +69,5 @@ augroup syntax
   autocmd!
   autocmd FileType php syntax enable 
   autocmd FileType html syntax enable 
+  autocmd FileType html.heex syntax enable 
 augroup END
