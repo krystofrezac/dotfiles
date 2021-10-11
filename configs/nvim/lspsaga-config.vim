@@ -1,7 +1,13 @@
 lua << EOF
   local saga = require 'lspsaga'
 
-  saga.init_lsp_saga()
+  saga.init_lsp_saga{
+   code_action_prompt = {
+     enable = true,
+     virtual_text = false,
+     sign = true,
+   },
+  }
 EOF
 
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
