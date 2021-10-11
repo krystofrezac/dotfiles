@@ -10,7 +10,8 @@ sudo pacman -S ccls
 rm -rf "$HOME/.config/nvim"
 ln -s "$DOTFILES/configs/nvim" "$HOME/.config/nvim"
 
-npm install -g diagnostic-languageserver yaml-language-server intelephense typescript-language-server typescript
+npm install -g diagnostic-languageserver yaml-language-server intelephense typescript-language-server typescript 
+@tailwindcss/language-server
 
 mkdir -p "$HOME/.cache/nvim/lspconfig"
 git clone git@github.com:elixir-lsp/elixir-ls.git "$HOME/.cache/nvim/lspconfig/elixirls"
