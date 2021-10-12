@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg xorg-xinit kitty i3-wm i3status dmenu i3lock imagemagick scrot arandr feh ttf-fira-code dunst libnotify nvidia network-manager-applet nautilus noto-fonts-emoji 
+sudo pacman -S xorg xorg-xinit kitty i3-wm i3status dmenu i3lock imagemagick scrot arandr feh ttf-fira-code dunst libnotify nvidia nvidia-utils xf86-video-intel network-manager-applet nautilus noto-fonts-emoji 
 yay -S nerd-fonts-fira-code 
 
 ln -sf "$DOTFILES/configs/xorg-xinit/.xinitrc" "$HOME/.xinitrc"
