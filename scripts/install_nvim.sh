@@ -6,7 +6,7 @@ asdf global neovim latest
 
 # LSP
 
-sudo pacman -S ccls
+sudo pacman -S ccls ripgrep
 rm -rf "$HOME/.config/nvim"
 ln -s "$DOTFILES/configs/nvim" "$HOME/.config/nvim"
 
