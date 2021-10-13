@@ -278,6 +278,9 @@ mode "$mode_brightnes" {
   bindsym 8 exec --no-startup-id "brightnessctl s 80%", mode "default"
   bindsym 9 exec --no-startup-id "brightnessctl s 90%", mode "default"
   bindsym 0 exec --no-startup-id "brightnessctl s 100%", mode "default"
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+b mode "$mode_brightnes"
