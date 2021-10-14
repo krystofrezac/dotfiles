@@ -11,3 +11,6 @@ ln -s "$DOTFILES/configs/zsh/.zshrc" "$HOME/.config/zsh"
 ln -s "$DOTFILES/configs/zsh/aliases" "$HOME/.config/zsh/"
 
 ln -s "$DOTFILES/configs/zsh/external" "$HOME/.config/zsh"
+
+rm -rf "$XDG_CONFIG_HOME/starship"
+ln -s "$DOTFILES/configs/starship" "$XDG_CONFIG_HOME"

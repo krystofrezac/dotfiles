@@ -15,6 +15,7 @@ export DOTFILES="$HOME/dotfiles"
 # For chrome notifications
 export $(dbus-launch)
 
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 #######
 # ZSH #
 #######

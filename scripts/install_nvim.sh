@@ -10,7 +10,7 @@ sudo pacman -S ccls ripgrep
 rm -rf "$HOME/.config/nvim"
 ln -s "$DOTFILES/configs/nvim" "$HOME/.config/nvim"
 
-npm install -g diagnostic-languageserver yaml-language-server intelephense typescript-language-server typescript 
+npm install -g diagnostic-languageserver yaml-language-server intelephense typescript-language-server typescript eslint_d
 @tailwindcss/language-server
 
 mkdir -p "$HOME/.cache/nvim/lspconfig"
