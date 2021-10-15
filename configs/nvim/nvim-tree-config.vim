@@ -37,8 +37,12 @@ lua << EOF
 require'nvim-tree'.setup{
   hijack_cursor = false,
   auto_close = true,
-  tab_open = true,
-  lsp_diagnostics = true,
-  tree_width = 40,
+  open_on_tab = true,
+  dignostics = {
+    enable = true
+  },
+  view = {
+    width = 40
+  }
 }
 EOF
