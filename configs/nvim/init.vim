@@ -14,6 +14,7 @@ runtime telescope-config.vim
 runtime nvim-tree-config.vim
 runtime vim-rainbow-config.vim
 runtime lspsaga-config.vim
+runtime vim-jsx-typescript-config.vim
 
 " Mac compe height
 set pumheight=15
