@@ -9,6 +9,7 @@ lua require("todo-comments-config")
 lua require("nvim-compe-config")
 lua require("barbar-config")
 lua require("nvim-colorizer-config")
+lua require("snippets/index")
 
 runtime telescope-config.vim
 runtime nvim-tree-config.vim
@@ -72,3 +73,5 @@ augroup syntax
   autocmd FileType html syntax enable 
   autocmd FileType html.heex syntax enable 
 augroup END
+
+lua require'snippets'.use_suggested_mappings()

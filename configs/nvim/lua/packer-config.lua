@@ -17,7 +17,10 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
   use 'glepnir/lspsaga.nvim'
-  
+
+  -- Snippets
+  use 'norcalli/snippets.nvim'
+
   -- Telescope 
   use {
     'nvim-telescope/telescope.nvim',
