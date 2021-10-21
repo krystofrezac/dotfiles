@@ -1,7 +1,6 @@
-local U = require'snippets.utils'
-
 local elixir={
   req = [[local ${2:$1} = require '${1:ahoj}']];
+  -- live component
   lc = 
 [[
 defmodule ${1}Web.${2} do
@@ -11,6 +10,7 @@ defmodule ${1}Web.${2} do
 end
 ]];
 
+  -- update
   up = 
 [[
   @impl true
@@ -24,7 +24,16 @@ end
   end
 
   ${0}
-]]
+]];
+
+  -- handle event
+  he=
+[[
+  @impl true
+  def handle_event(${1:event}, ${2:params}, socket) do
+    ${0}
+  end
+]];
 }
 
 return elixir
