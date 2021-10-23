@@ -141,6 +141,6 @@ nvim_lsp.elixirls.setup({
   }
 })
 
--- nvim_lsp.tailwindcss.setup{
--- filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "django-html", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" }
--- }
+nvim_lsp.tailwindcss.setup{
+  on_attach = on_attach,
+}

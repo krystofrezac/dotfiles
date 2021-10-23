@@ -20,6 +20,9 @@ runtime vim-jsx-typescript-config.vim
 " Mac compe height
 set pumheight=15
 
+" No line wrapping
+set nowrap
+
 " Disable auto commenting on new line
 set formatoptions-=cro
 
