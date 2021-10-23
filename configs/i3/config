@@ -264,6 +264,10 @@ bindsym $mod+c mode "$mode_keyboard"
 
 # dunst - notifications
 exec --no-startup-id dunst
+bindsym CTRL+x              exec --no-startup-id "dunstctl close"
+bindsym CTRL+SHIFT+x        exec --no-startup-id "dunstctl close-all"
+bindsym CTRL+grave          exec --no-startup-id "dunstctl history-pop"
+bindsym CTRL+SHIFT+period   exec --no-startup-id "dunstctl context"
 
 set $mode_brightnes Enter number 1-0
 

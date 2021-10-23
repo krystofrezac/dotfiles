@@ -39,12 +39,6 @@
     width = 1
     color =  "#5C6370"
  
-[shortcuts]
-    close = ctrl+x
-    close_all = ctrl+shift+x
-    history = ctrl+grave
-    context = ctrl+shift+period
- 
 [urgency_low]
     background = "#ABB2BF"
     foreground = "#2C323C"
