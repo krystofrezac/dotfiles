@@ -45,6 +45,10 @@ bindkey -M vicmd e edit-command-line
 # highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 # run i3 on startup
 if [ "$(tty)" = "/dev/tty1" ];
 then

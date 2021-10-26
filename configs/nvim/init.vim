@@ -70,11 +70,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
-augroup syntax
-  autocmd!
-  autocmd FileType php syntax enable 
-  autocmd FileType html syntax enable 
-  autocmd FileType html.heex syntax enable 
-augroup END
+" Toggle syntax
+nnoremap <silent> <Leader>s :syntax enable<CR>
 
 lua require'snippets'.use_suggested_mappings()
