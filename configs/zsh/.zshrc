@@ -21,6 +21,10 @@ source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # prompt 
 eval "$(starship init zsh)"
 export LC_CTYPE=en_US.UTF-8
+
+# steam scaling
+export GDK_SCALE=1 steam
+
 # Push the current directory visited on to the stack
 setopt AUTO_PUSHD
 

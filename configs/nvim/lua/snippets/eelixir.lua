@@ -2,6 +2,17 @@ local U = require'snippets.utils'
 
 local eelixir={
   req = [[local ${2:$1} = require '${1:ahoj}']];
+
+  -- for
+  fo = U.match_indentation
+[[
+<%= for ${1:item} <- ${2:@items} do %>
+  ${0}    
+<% end  %>
+]];
+
+  -- forms
+
   la = U.match_indentation
 [[
 <%= label f, :${1} %>

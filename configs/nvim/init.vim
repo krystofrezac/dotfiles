@@ -14,7 +14,6 @@ lua require("snippets/index")
 runtime telescope-config.vim
 runtime nvim-tree-config.vim
 runtime vim-rainbow-config.vim
-runtime lspsaga-config.vim
 runtime vim-jsx-typescript-config.vim
 
 " Mac compe height
@@ -37,14 +36,14 @@ set hidden
 set clipboard+=unnamedplus
 
 " Disable arrows
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
+" nnoremap <Up> <Nop>
+" nnoremap <Down> <Nop>
+" nnoremap <Left> <Nop>
+" nnoremap <Right> <Nop>
+" inoremap <Up> <Nop>
+" inoremap <Down> <Nop>
+" inoremap <Left> <Nop>
+" inoremap <Right> <Nop>
 
 inoremap <Esc> <Nop>
 " Line numbers
