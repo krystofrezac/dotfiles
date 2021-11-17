@@ -56,7 +56,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show combi -theme slate 
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme default 
+bindsym $mod+Shift+d exec --no-startup-id rofi -show run -theme default 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -193,16 +194,16 @@ bar {
         status_command i3status --config ~/.config/i3/i3status.conf
         tray_output primary
         colors {
-          background #ABB2BF
-          statusline #2C323C
-          separator #2C323C
+          background #282C34
+          statusline #ABB2BF
+          separator #ABB2BF
 
           # border background text
           focused_workspace #ABB2BF #282C34 #ABB2BF
           active_workspace #3E4452 #2C323C #98C379
-          inactive_workspace #ABB2BF #3E4452 #ABB2BF
+          inactive_workspace #282C34 #282C34 #ABB2BF
           urgent_workspace #E06C75 #E06C75 #ABB2BF
-          binding_mode #3E4452 #2C323C #ABB2BF
+          binding_mode #282C34 #ABB2BF #282C34 
         }
 }
 

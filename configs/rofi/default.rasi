@@ -1,0 +1,74 @@
+
+configuration {
+    // The display name of this browser
+    display-ssh:                   "  ";
+    // The display name of this browser
+    display-run:                    "";
+    // The display name of this browser
+    display-drun:                   "";
+    // The display name of this browser
+    display-window:                 "";
+    display-combi:                  "";
+    show-icons: true;
+}
+
+* {
+  text:       #b2b2b2;
+  fg:         #ABB2BF;
+  bg:         #282C34;
+
+  spacing: 0;
+
+  font: "FiraCode Nerd Font Medium 14";
+  text-color: @text;
+  background-color: #282C34;
+
+  spacing: 0;
+  width: 512px;
+}
+
+window {
+  border: 4px;
+  border-color: #3E4452;
+}
+
+inputbar {
+  margin: 8px;
+  background-color: #3E4452;
+  border-radius: 4px;
+  children: [prompt,entry];
+}
+
+prompt {
+  padding: 0 10px;
+  border: 0 1px 0 0;
+  background-color: #3E4452;
+  vertical-align: 0.5;
+}
+
+entry {
+  padding: 8px;
+  background-color: #3E4452;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  lines: 6;
+  padding: 0 8px 8px 8px;
+}
+
+element {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+element selected, element-icon selected,  element-text selected{
+  background-color: #2C323C;
+}
+
+element-icon {
+  vertical-align: 0.5;
+  padding: 0 12px 0 4px;
+}
+

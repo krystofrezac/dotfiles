@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S xorg xorg-xinit kitty i3-gaps i3status dmenu i3lock imagemagick scrot arandr feh ttf-fira-code dunst libnotify nvidia nvidia-utils xf86-video-intel network-manager-applet nautilus noto-fonts-emoji pavucontrol
+sudo pacman -S xorg xorg-xinit kitty i3-gaps i3status dmenu i3lock imagemagick scrot arandr feh ttf-fira-code dunst libnotify nvidia nvidia-utils xf86-video-intel network-manager-applet nautilus noto-fonts-emoji pavucontrol rofi
 yay -S nerd-fonts-fira-code blueberry
 
 ln -sf "$DOTFILES/configs/xorg-xinit/.xinitrc" "$HOME/.xinitrc"
@@ -16,5 +16,8 @@ ln -s "$DOTFILES/configs/X11" "$HOME/.config"
 
 rm -rf "$XDG_CONFIG_HOME/dunst"
 ln -s "$DOTFILES/configs/dunst" "$XDG_CONFIG_HOME"
+
+rm -rf "$XDG_CONFIG_HOME/rofi"
+ln -s "$DOTFILES/configs/rofi" "$XDG_CONFIG_HOME"
 
 echo Installation complete
