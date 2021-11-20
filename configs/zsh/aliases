@@ -8,6 +8,6 @@ alias ".."="cd .."
 
 # Git
 alias gpu="git push"
-alias gcm="git commit -m"
+alias gcm="git commit -v"
 alias ga="git add"
 alias gst="git status"
