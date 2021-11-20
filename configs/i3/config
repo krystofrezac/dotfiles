@@ -200,7 +200,7 @@ bar {
 
           # border background text
           focused_workspace #ABB2BF #282C34 #ABB2BF
-          active_workspace #3E4452 #2C323C #98C379
+          active_workspace #282C34 #282C34 #ABB2BF
           inactive_workspace #282C34 #282C34 #ABB2BF
           urgent_workspace #E06C75 #E06C75 #ABB2BF
           binding_mode #282C34 #ABB2BF #282C34 
@@ -293,9 +293,11 @@ bindsym $mod+b mode "$mode_brightnes"
 ##########
 # DESIGN #
 ##########
-gaps inner 10
+gaps inner 7
 
 title_align center
+
+new_window normal 0 px
 
 # default open in tab
 workspace_layout tabbed
@@ -305,7 +307,7 @@ hide_edge_borders both
 
 # class border backgr. text indicator child_border 
 client.focused 		#3E4452 #3E4452 #ABB2BF #285577
-client.focused_inactive #333333 #282c34 #xabb2bf #484e50
-client.unfocused 	#333333 #222222 #5C6370 #292d2e #222222
+client.focused_inactive 	#222222 #222222 #5C6370 #292d2e #222222
+client.unfocused 	#222222 #222222 #5C6370 #292d2e #222222
 client.urgent 		#E06C75 #E06C75 #ABB2BF #E06C75 #E06C75
 client.placeholder 	#000000 #0c0c0c #ABB2BF #000000 #0c0c0c
