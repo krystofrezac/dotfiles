@@ -45,6 +45,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd e edit-command-line
+bindkey -M viins 'kj' vi-cmd-mode
 
 # highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

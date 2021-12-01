@@ -4,8 +4,8 @@ local elixir={
   -- component
   co = 
 [[
-defmodule ${1}Web.Live.${2}do
-  use Phoenix.Component
+defmodule ${1}Web.Live.${2} do
+  use ${1}Web, :component 
 
   ${0}
 end

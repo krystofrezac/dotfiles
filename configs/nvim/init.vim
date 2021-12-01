@@ -69,7 +69,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
-" Toggle syntax
-nnoremap <silent> <Leader>s :syntax enable<CR>
+" Spell
+set spell spelllang=en_us
 
 lua require'snippets'.use_suggested_mappings()
