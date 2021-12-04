@@ -72,4 +72,7 @@ set smartindent
 " Spell
 set spell spelllang=en_us
 
+" Add _ as word separator
+set iskeyword-=_ 
+
 lua require'snippets'.use_suggested_mappings()
