@@ -12,6 +12,19 @@ local eelixir={
 ]];
 
   -- forms
+  form = U.match_indentation
+[[
+
+<.form let={f} for={@email_changeset} as="email" phx-submit="email-submit">
+  ${0}
+</.form>
+]];
+
+  su = U.match_indentation
+[[
+<%= submit "${1}" %>
+${0}
+]];
 
   la = U.match_indentation
 [[
@@ -35,6 +48,13 @@ ${0}
   ti = U.match_indentation
 [[
 <%= text_input f, :${1} %>
+${0}
+]];
+
+
+  pi = U.match_indentation
+[[
+<%= password_input f, :${1} %>
 ${0}
 ]];
 }

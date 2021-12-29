@@ -16,7 +16,7 @@ npm install -g diagnostic-languageserver yaml-language-server intelephense types
 mkdir -p "$HOME/.cache/nvim/lspconfig"
 git clone git@github.com:elixir-lsp/elixir-ls.git "$HOME/.cache/nvim/lspconfig/elixirls"
 cd "$HOME/.cache/nvim/lspconfig/elixirls" && mkdir rel
-mix deps.get @@ mix compile
+mix deps.get && mix compile
 mix elixir_ls.release -o release
 
 echo Installation complete

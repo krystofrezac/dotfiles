@@ -18,6 +18,8 @@ require('packer').startup(function()
   use 'hrsh7th/nvim-compe'
   use 'glepnir/lspsaga.nvim'
 
+  use 'stevearc/dressing.nvim'
+
   -- Snippets
   use 'norcalli/snippets.nvim'
 

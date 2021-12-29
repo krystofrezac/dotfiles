@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -71,92 +71,119 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["barbar.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/barbar.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-compe"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-compe",
+    url = "https://github.com/hrsh7th/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/onedark.vim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/onedark.vim",
+    url = "https://github.com/joshdick/onedark.vim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["snippets.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/snippets.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/snippets.nvim",
+    url = "https://github.com/norcalli/snippets.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["todo-comments.nvim"] = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/todo-comments.nvim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
   },
   ["typescript-vim"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/typescript-vim"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/typescript-vim",
+    url = "https://github.com/leafgarland/typescript-vim"
   },
   ["vim-devicons"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-devicons"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-elixir"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-elixir"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-elixir",
+    url = "https://github.com/elixir-editors/vim-elixir"
   },
   ["vim-graphql"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-graphql"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-graphql",
+    url = "https://github.com/jparise/vim-graphql"
   },
   ["vim-js"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-js"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-js",
+    url = "https://github.com/yuezk/vim-js"
   },
   ["vim-jsx-typescript"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-jsx-typescript"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-jsx-typescript",
+    url = "https://github.com/peitalin/vim-jsx-typescript"
   },
   ["vim-rainbow"] = {
     loaded = true,
-    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-rainbow"
+    path = "/home/krystof/.config/local/share/nvim/site/pack/packer/start/vim-rainbow",
+    url = "https://github.com/frazrepo/vim-rainbow"
   }
 }
 

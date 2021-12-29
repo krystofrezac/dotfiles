@@ -22,9 +22,6 @@ set pumheight=15
 " No line wrapping
 set nowrap
 
-" Disable auto commenting on new line
-set formatoptions-=cro
-
 " File name
 set title
 set titlestring=%F
@@ -36,16 +33,17 @@ set hidden
 set clipboard+=unnamedplus
 
 " Disable arrows
-" nnoremap <Up> <Nop>
-" nnoremap <Down> <Nop>
-" nnoremap <Left> <Nop>
-" nnoremap <Right> <Nop>
-" inoremap <Up> <Nop>
-" inoremap <Down> <Nop>
-" inoremap <Left> <Nop>
-" inoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
 
 inoremap <Esc> <Nop>
+
 " Line numbers
 set number relativenumber
 
@@ -56,6 +54,7 @@ cnoremap kj <C-C><Esc>
 
 inoremap <Esc> <Nop>
 vnoremap <Esc> <Nop> 
+
 " Map new line without insert mode
 nnoremap oo o<Esc>
 nnoremap OO O<Esc>
