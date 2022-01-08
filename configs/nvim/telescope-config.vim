@@ -21,5 +21,5 @@ lua << EOF
     }
   }
   require('telescope').load_extension('fzf')
-  vim.api.nvim_set_keymap('n', '<Leader>f', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', {noremap = true, silent = true})
+  vim.api.nvim_set_keymap('n', '<Leader>f', ':lua require"telescope.builtin".find_files({no_ignore=true})<CR>', {noremap = true, silent = true})
 EOF

@@ -50,7 +50,6 @@ end
   up = 
 [[
   @impl Phoenix.LiveView
-  @spec update(%{}, Phoenix.LiveView.Socket.t()) :: {:ok, Phoenix.LiveView.Socket.t()}
   def update(assigns, socket) do
     ${0}
 
@@ -67,12 +66,24 @@ end
   he =
 [[
   @impl Phoenix.LiveView
-  def handle_event(${1:":event"}, ${2:params}, socket) do
+  def handle_event(${1:"event"}, ${2:params}, socket) do
     ${0}
     
     {:noreply, socket}
   end
 ]];
+
+  -- handle params
+  hp = 
+[[
+  @impl Phoenix.LiveView
+  def handle_params(params, _url, socket) do
+    ${0}
+
+    {:noreply, socket}
+  end
+]]
+
 }
 
 return elixir

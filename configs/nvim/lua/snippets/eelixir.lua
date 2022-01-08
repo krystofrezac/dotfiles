@@ -15,7 +15,12 @@ local eelixir={
   form = U.match_indentation
 [[
 
-<.form let={f} for={@email_changeset} as="email" phx-submit="email-submit">
+<.form 
+  let={f} 
+  for={@${1:changeset}}  
+  phx-submit="${2:submit}" 
+  phx-change="${3:change}"
+>
   ${0}
 </.form>
 ]];
