@@ -273,7 +273,7 @@ bindsym CTRL+SHIFT+period   exec --no-startup-id "dunstctl context"
 set $mode_brightnes Enter number 1-0
 
 mode "$mode_brightnes" {
-  bindsym 1 exec --no-startup-id "brightnessctl s 2%", mode "default"
+  bindsym 1 exec --no-startup-id "brightnessctl s 1%", mode "default"
   bindsym 2 exec --no-startup-id "brightnessctl s 5%", mode "default"
   bindsym 3 exec --no-startup-id "brightnessctl s 10%", mode "default"
   bindsym 4 exec --no-startup-id "brightnessctl s 25%", mode "default"
