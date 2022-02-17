@@ -14,9 +14,11 @@ bindkey  "^[[3~"  delete-char
 
 # vi-mode
 ZVM_VI_INSERT_ESCAPE_BINDKEY=kj
-source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 # asdf
-. /opt/asdf-vm/asdf.sh
+. ~/.asdf/asdf.sh
+
+source "$XDG_CONFIG_HOME/zsh/antigen.zsh"
+antigen bundle jeffreytse/zsh-vi-mode
 
 # prompt 
 eval "$(starship init zsh)"
@@ -51,8 +53,8 @@ bindkey -M viins 'kj' vi-cmd-mode
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Search
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+bindkey "^[OA" history-beginning-search-backward
+bindkey "^[OB" history-beginning-search-forward
 
 # run i3 on startup
 if [ "$(tty)" = "/dev/tty1" ];

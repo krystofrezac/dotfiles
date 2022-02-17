@@ -10,6 +10,7 @@ git config --global user.email "krystofrezac@gmail.com"
 git config --global user.name "Kryštof Řezáč"
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 git config --global interactive.diffFilter "diff-so-fancy --patch"
+git config --global init.defaultBranch main
 
 git config --global alias.ll "log --graph --abbrev-commit --decorate --date=format:'%d.%m.%Y %H:%M' --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(dim white)- %an - %ad%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
