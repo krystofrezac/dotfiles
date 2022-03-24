@@ -1,9 +1,9 @@
 #!/bin/bash
-
-sudo pacman -S git diff-so-fancy xclip htop tldr udiskie firefox brightnessctl playerctl libinput xf86-input-libinput xfce4-settings inotify-tools
-yay -S google-chrome asdf-vm
+sudo add-apt-repository ppa:aos1/diff-so-fancy
+sudo apt update
+sudo apt install git diff-so-fancy
 # asdf
-cp -f /opt/asdf-vm ~/.asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
 
 # git
 git config --global user.email "krystofrezac@gmail.com"
@@ -13,5 +13,8 @@ git config --global interactive.diffFilter "diff-so-fancy --patch"
 git config --global init.defaultBranch main
 
 git config --global alias.ll "log --graph --abbrev-commit --decorate --date=format:'%d.%m.%Y %H:%M' --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(dim white)- %an - %ad%C(reset)%C(bold yellow)%d%C(reset)' --all"
+git config --global alias.st "status"
+git config --global alias.cm "commit"
+git config --global alias.pu "push"
 
 echo Installation complete
