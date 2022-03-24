@@ -66,16 +66,17 @@ export ZSH="$HOME/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 
-fpath=($ZDOTDIR/external $fpath)
-fpath+=$ZDOTDIR/external/pure
-
-source "$XDG_CONFIG_HOME/zsh/aliases"
-
+# Completion
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 autoload -Uz compinit; compinit
+_comp_options+=(globdots)
+source "$ZDOTDIR/external/completion.zsh"
 
 # Autocompletion for hidden files
 #_comp_options+=(globdots)
 #source "$ZDOTDIR/external/completion.zsh"
+
+source "$XDG_CONFIG_HOME/zsh/aliases"
 
 # Map delete
 bindkey  "^[[3~"  delete-char
