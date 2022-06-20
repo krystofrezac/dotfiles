@@ -9,6 +9,10 @@ plugins=(
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -115,9 +119,6 @@ zle -N edit-command-line
 bindkey -M vicmd e edit-command-line
 bindkey -M viins 'kj' vi-cmd-mode
 
-# Search
-bindkey "^[OA" history-beginning-search-backward
-bindkey "^[OB" history-beginning-search-forward
 
 # run i3 on startup
 if [ "$(tty)" = "/dev/tty1" ];
