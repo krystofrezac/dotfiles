@@ -1,0 +1,23 @@
+theme = "custom"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+rulers = [80]
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.insert]
+"C-[" = "normal_mode"
+"C-space" = "completion"
+"C-x" = "no_op"
+
+[keys.select]
+"C-[" = "normal_mode"

@@ -1,0 +1,40 @@
+[language-server.eslint]
+args = ["--stdio"]
+command = "vscode-eslint-language-server"
+
+[language-server.eslint.config]
+format = true
+nodePath = ""
+onIgnoredFiles = "off"
+packageManager = "yarn"
+quiet = false
+rulesCustomizations = []
+run = "onType"
+useESLintClass = false
+validate = "on"
+codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } }
+codeActionOnSave = { mode = "all" }
+experimental = { }
+problems = { shortenToSingleLine = false }
+workingDirectory = { mode = "auto" }
+
+[[language]]
+name = "go"
+auto-format = false
+
+[[language]]
+name = "javascript"
+indent = { tab-width = 4, unit = "\t" }
+auto-format = false
+
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "eslint" ]
+indent = { tab-width = 4, unit = "\t" }
+auto-format = false
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "eslint" ]
+indent = { tab-width = 4, unit = "\t" }
+auto-format = false
