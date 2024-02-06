@@ -1,9 +1,11 @@
-"punctuation.bracket" = "blue11"
-"punctuation.special" = "blue11"
-"keyword.storage" = { fg = "blue11", modifiers = ["bold"] }
-"keyword.function" = "blue11"
-"keyword.control.return" = { fg = "blue11", modifiers = ["bold"] }
-comment = "gray10"
+type = "purple"
+constructor = "purple"
+constant = "blue"
+comment = "#707781"
+"variable.parameter" = "#E36208"
+"punctuation.bracket" = "#E6B422"
+"keyword" = "#D73A4A"
+"function" = "purple"
 
 "markup.heading" = { modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
@@ -17,7 +19,7 @@ comment = "gray10"
 "diff.minus" = "red11"
 "diff.delta" = "orange11"
 
-"ui.background" = { bg = "gray1" }
+"ui.background" = { bg = "white" }
 "ui.background.separator" = { fg = "gray12" }
 
 "ui.linenr" = { fg = "gray10" }
@@ -58,7 +60,13 @@ error = { fg = "gray1", bg = "red10"}
 
 [palette]
 black = "#000000"
+white = "#ffffff"
 
+# Code
+purple = "#6F42C1"
+blue = "#015CC5"
+
+# UI
 gray1 = '#fcfcfc'
 gray2 = '#f9f9f9'
 gray3 = '#f0f0f0'

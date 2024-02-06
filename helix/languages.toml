@@ -3,7 +3,6 @@ args = ["--stdio"]
 command = "vscode-eslint-language-server"
 
 [language-server.eslint.config]
-format = true
 nodePath = ""
 onIgnoredFiles = "off"
 packageManager = "yarn"
@@ -20,21 +19,21 @@ workingDirectory = { mode = "auto" }
 
 [[language]]
 name = "go"
-auto-format = false
 
 [[language]]
 name = "javascript"
 indent = { tab-width = 4, unit = "\t" }
-auto-format = false
 
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server", "eslint" ]
+# language-servers = [ { name = "typescript-language-server", except-features = ["format"] }, { name = "eslint", except-features = ["format"] } ]
+language-servers = [ "typescript-language-server" ]
 indent = { tab-width = 4, unit = "\t" }
-auto-format = false
+# formatter = { command = 'eslint_d', args = ["--stdin"] }
 
 [[language]]
 name = "tsx"
-language-servers = [ "typescript-language-server", "eslint" ]
+# language-servers = [ { name = "typescript-language-server", except-features = ["format"] }, { name = "eslint", except-features = ["format"] } ]
+language-servers = [ "typescript-language-server" ]
 indent = { tab-width = 4, unit = "\t" }
-auto-format = false
+# formatter = { command = "eslint_d", args = ["--stdin", "--fix-to-stdout", "--stdin-filename", "file.tsx"] }
