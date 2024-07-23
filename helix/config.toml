@@ -15,6 +15,9 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
+[keys.normal]
+"A-x" = "select_line_above"
+
 [keys.insert]
 "C-[" = "normal_mode"
 "C-space" = "completion"
