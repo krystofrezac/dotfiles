@@ -3,7 +3,7 @@
 	name = Kryštof Řezáč
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
-	excludesfile = /Users/krystof/.gitignore_global
+	excludesfile = /Users/krystofrezac/.gitignore_global
 	editor = hx
 	ignorecase = false
 [interactive]
