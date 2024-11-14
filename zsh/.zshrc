@@ -18,6 +18,16 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
+export LANG=en_US.UTF-8
+export NODE_BINARY=/Users/krystofrezac/.asdf/shims/node
+
+## Ruby
+export GEM_HOME=$HOME/.gem/ruby/3.3.0
+export PATH=$GEM_HOME/bin:$PATH
+
 
 # Node
 export NODE_OPTIONS=--max_old_space_size=8000
+
+# Python
+export PATH=$PATH:~/.local/bin/

@@ -1,0 +1,3 @@
+[language-server.kotlin-language-server]
+command = "kotlin-language-server" 
+timeout = 60
