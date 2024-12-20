@@ -1,5 +1,8 @@
 # dotfiles
 
+## Prerequisites
+- [Oh my zsh](https://ohmyz.sh/#install)
+
 ## Setup
 ```bash
   ln -s ~/workspace/krystofrezac/dotfiles/helix ~/.config/helix

@@ -25,3 +25,5 @@
 
 [includeIf "gitdir:~/workspace/pbk/"]
 	path = ~/workspace/pbk/.gitconfig
+[oh-my-zsh]
+	hide-info = 1
