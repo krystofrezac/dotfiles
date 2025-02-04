@@ -2,13 +2,13 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git git-prompt kubectl docker)
 
+# Disable ctrl-d closing tab
+setopt ignore_eof
+
 source $ZSH/oh-my-zsh.sh
 
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# yarn global packages
-export PATH="$(yarn global bin):$PATH"
 
 # Go global packages
 export PATH="$(go env GOPATH)/bin:$PATH"

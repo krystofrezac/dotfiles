@@ -27,3 +27,5 @@
 	path = ~/workspace/pbk/.gitconfig
 [oh-my-zsh]
 	hide-info = 1
+[log]
+	date = format:%d. %m. %Y %H:%M:%S
