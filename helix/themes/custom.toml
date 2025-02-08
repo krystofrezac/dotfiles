@@ -39,7 +39,7 @@ comment = "#707781"
 "ui.text.focus" = { bg= "orange8" }
 "ui.virtual" = { fg = "gray10" }
 "ui.virtual.ruler" = { bg = "gray3" }
-"ui.virtual.jump-label" = { fg="gray4", bg = "red9" }
+"ui.virtual.jump-label" = { fg="red", modifiers = ["bold", "underlined"] }
 
 "ui.selection" = { bg = "orange4" }
 "ui.cursor.match" = { modifiers = ["bold", "underlined"] }
