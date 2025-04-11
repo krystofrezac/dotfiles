@@ -8,7 +8,7 @@ setopt ignore_eof
 source $ZSH/oh-my-zsh.sh
 
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Go global packages
 export PATH="$(go env GOPATH)/bin:$PATH"
