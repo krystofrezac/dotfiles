@@ -1,11 +1,14 @@
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git git-prompt kubectl docker)
+# export ZSH="$HOME/.oh-my-zsh"
+# ZSH_THEME="robbyrussell"
+# plugins=(git git-prompt kubectl docker)
 
 # Disable ctrl-d closing tab
 setopt ignore_eof
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
+
+# homebrew
+export HOMEBREW_NO_AUTO_UPDATE=1 
 
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
