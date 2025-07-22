@@ -41,5 +41,7 @@ export NODE_OPTIONS=--max_old_space_size=8000
 # Python
 export PATH=$PATH:~/.local/bin/
 
+eval "$(atuin init zsh)"
+
 # Needs to be at the end
 eval "$(starship init zsh)"

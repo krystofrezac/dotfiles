@@ -10,4 +10,5 @@
   ln -s ~/workspace/krystofrezac/dotfiles/git ~/
   ln -s ~/workspace/krystofrezac/dotfiles/zsh/.zshrc ~/.zshrc
   ln -s ~/workspace/krystofrezac/dotfiles/starship/starship.toml ~/.config/starship.toml
+  ln -s ~/workspace/krystofrezac/dotfiles/atuin ~/.config/atuin
 ```
