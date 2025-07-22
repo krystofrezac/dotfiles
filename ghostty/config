@@ -1,4 +1,6 @@
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
 theme = "Builtin Tango Light"
-# command = "/opt/homebrew/bin/nu"
+window-padding-x = 10
+window-padding-y = 5
+window-save-state = always
