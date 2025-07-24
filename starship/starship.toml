@@ -41,7 +41,7 @@ format = '[$symbol$context]($style) '
 format = '[$symbol($version)(🎯 $tfm)]($style) '
 
 [elixir]
-symbol = 'elixir '
+symbol = ' '
 format = '[$symbol($version \(OTP $otp_version\))]($style) '
 
 [elm]
@@ -136,6 +136,7 @@ format = '[$symbol$cloud(\($project\))]($style) '
 format = '[$symbol]($style) '
 
 [package]
+disabled = true
 symbol = 'package '
 format = '[$symbol$version]($style) '
 
